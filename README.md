@@ -25,3 +25,30 @@ Realizamos un escaneo con nmap y guardamos el resultado en un archivo de texto<b
 ```
 nmap -p- -sC -sV -sS --open -n -Pn -vvv 172.17.0.3 > scan.txt
 ```
+Leemos el archivo generado por nmap utilizando cat
+```
+cat scan.txt
+```
+En el analisis encontramos dos puertos, el puerto 80 que normalmente esta relacionado con el protocolo HTTP donde podemos encontrar un servidor web Apache y el puerto 22 que esta relacionado con SSH donde encontramos OpenSSH
+<br><br>
+![image_Alt](https://github.com/MaxGutierrezPi/WriteUps-de-Dockerlabs/blob/1236114a536f9d7788bcb15e0442765b2dad95a3/2.png)
+<br><br>
+Nos dirigimos al navegador y escribimos la direccion IP de la maquina desplegada, nos vamos al codigo del sitio web y hasta la parte de abajo podemos encontrar dos cadenas de texto cifradas con el metodo Base64 y podemos saberlo porque terminan con un signo de "igual".<br><vr>
+```
+ZGFuaWVsYQ== : Zm9jYXJvamE=
+```
+<br><br>
+Deciframos las dos cadenas utilizando este comando en la consola<br><br>
+```
+echo "ZGFuaWVsYQ==" | base64 -d
+```
+```
+echo "Zm9jYXJvamE=" | base64 -d
+```
+Una vez decifrado nos entregara estas credenciales<br><br>
+```
+daniela | focaroja
+```
+
+
+
