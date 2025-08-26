@@ -17,5 +17,11 @@ Cargamos el contenedor para poder interactuar con la maquina.
 ```
 bash auto_deploy.sh extraviado.tar
 ```
-<br><br><br>
+Despliegue correcto del contenedor que contiene la maquina
+<br><br>
 ![image_Alt](https://github.com/MaxGutierrezPi/WriteUps-de-Dockerlabs/blob/a1ebe92879696aeb64c38019a3811a7d08723825/1.png)
+<br><br>
+Realizamos un escaneo con nmap y guardamos el resultado en un archivo de texto<br>
+```
+nmap -p- -sC -sV -sS --open -n -Pn -vvv 172.17.0.3 > scan.txt
+```
