@@ -2,7 +2,7 @@
 Aqui muestro y explico como resuelvo maquinas del sitio de Dockerlabs
 
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
+![Cloud Honeynet / SOC](https://imgur.com/a/E038Pv8)
 
 ## Introduction
 
