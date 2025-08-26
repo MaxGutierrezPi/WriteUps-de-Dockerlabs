@@ -49,6 +49,10 @@ Una vez decifrado nos entregara estas credenciales<br><br>
 ```
 daniela | focaroja
 ```
+Usamos las credenciales obtenidas mientras nos conectamos por SSH a la dirección ip a traves del puerto 22<br><br>
+![image_Alt](https://github.com/MaxGutierrezPi/WriteUps-de-Dockerlabs/blob/8a80438daec1a83e074d50093690eab48c8c61fd/3.png)<br><br>
+Una vez dentro comenzamos con la busqueda de información, nos encontramos una carpeta oculta llamada .secreto y leemos el archivo  passdiego.txt con el comando cat y encontramos una cadena de texto cifrada tambien en base64, deciframos la cadena y nos arroja la cadena ballenanegra por lo que vamos a usarla como contraseña para entrar al usuario Diego<br><br>
+![image_Alt](https://github.com/MaxGutierrezPi/WriteUps-de-Dockerlabs/blob/96a8b385caace4ca1fcf69b9b7dea9ca592656a6/4.png)<br><br>
 
 
 
