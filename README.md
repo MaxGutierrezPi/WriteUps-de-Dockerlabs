@@ -19,7 +19,7 @@ bash auto_deploy.sh extraviado.tar
 ```
 Despliegue correcto del contenedor que contiene la maquina
 <br><br>
-![image_Alt](https://github.com/MaxGutierrezPi/WriteUps-de-Dockerlabs/blob/a1ebe92879696aeb64c38019a3811a7d08723825/1.png)
+![image_Alt](https://github.com/NETD3VIL/Write-up_Extraviado/blob/851bd738bbac8a4065e61fe9d817ec185aaf0f48/1.png)
 <br><br>
 Realizamos un escaneo con nmap y guardamos el resultado en un archivo de texto<br>
 ```
