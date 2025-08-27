@@ -37,7 +37,7 @@ Nos dirigimos al navegador y escribimos la direccion IP de la maquina desplegada
 ```
 ZGFuaWVsYQ== : Zm9jYXJvamE=
 ```
-<br><br>
+<br>
 Deciframos las dos cadenas utilizando este comando en la consola<br><br>
 ```
 echo "ZGFuaWVsYQ==" | base64 -d
