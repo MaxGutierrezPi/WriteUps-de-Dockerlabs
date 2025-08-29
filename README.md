@@ -52,5 +52,15 @@ Usamos las credenciales obtenidas para conectarnos por SSH a la dirección ip a 
 Una vez dentro comenzamos con la busqueda de información, nos encontramos una carpeta oculta llamada .secreto y leemos el archivo  passdiego.txt con el comando cat y encontramos una cadena de texto cifrada tambien en base64, deciframos la cadena y nos arroja el texto "ballenanegra" por lo que vamos a usarla como contraseña para entrar al usuario Diego<br><br>
 ![image_Alt](https://github.com/MaxGutierrezPi/WriteUps-de-Dockerlabs/blob/96a8b385caace4ca1fcf69b9b7dea9ca592656a6/4.png)<br><br>
 
+Una ves que entramos al usuario diego a traves de SSH buscamos alguna otra credencial para conseguir permisos de root, buscamos mientras nos movemos por las carpetas despues encontramos archivos y carpetas ocultas hasta que damos con un archivo con un nombre inusual ".-" y nos muestra algo asi como una adivinanza<br><br>
+![image_Alt](https://github.com/NETD3VIL/Write-up_Extraviado/blob/1a39f6fd43e172d3cc1175f26943598769724061/7.png)<br><br>
+![image_Alt](https://github.com/NETD3VIL/Write-up_Extraviado/blob/16fc48ebc428b0c4022f8faee477bea2b4a6c123/6.png)<br><br>
+Di con la contraseña "osoazul", la probamos con el usuario root y asi conseguimos permisos root, fin de la maquina.<br><br>
+![image_Alt](https://github.com/NETD3VIL/Write-up_Extraviado/blob/a278dc677cb707e70ed4773f830e42db2784eee2/8.png)<br><br>
+
+
+
+
+
 
 
